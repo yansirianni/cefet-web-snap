@@ -1,5 +1,5 @@
 const balaozinhoEl = document.querySelector('#balaozinho');
-const marcacoes = document.querySelectorAll('.marcacao');
+let marcacoes = document.querySelectorAll('.marcacao');
 
 for (let marcacaoEl of marcacoes){
 
