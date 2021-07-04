@@ -5,7 +5,8 @@ for (let marcacaoEl of marcacoes){
 
     marcacaoEl.addEventListener('mouseover', (e) => {   
         marcacaoEl = e.currentTarget;       
-        balaozinhoEl.innerHTML = `<h2>${marcacaoEl.dataset.titulo}<\h2><p>${marcacaoEl.dataset.conteudo}<\p>`;
+        balaozinhoEl.innerHTML = `<h2>${marcacaoEl.dataset.titulo}</h2>
+                                  <p>${marcacaoEl.dataset.conteudo}</p>`;
         balaozinhoEl.style.color = marcacaoEl.dataset.cor;
     });
 
