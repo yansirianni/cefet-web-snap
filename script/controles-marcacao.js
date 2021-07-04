@@ -25,7 +25,7 @@ desejaInscreverEl.addEventListener('click', () =>{
 
 for (let marcacaoEl of marcacoes){
       
-    marcacaoEl.addEventListener('click', (e) => {     
+    marcacaoEl.addEventListener('click', () => {     
         
         marcacoes.forEach(function(el){
             el.classList.remove('selecionada');
@@ -49,43 +49,43 @@ for (let marcacaoEl of marcacoes){
 
 //Exercice 3
 
-xEl.addEventListener('input', e => {
+xEl.addEventListener('input', () => {
     const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
     marcacaoSelecionadaEl.style.left = `${xEl.value}px`;
 });
 
-yEl.addEventListener('input', e => {
+yEl.addEventListener('input', () => {
     const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
     marcacaoSelecionadaEl.style.top = `${yEl.value}px`;
 });
 
-larguraEl.addEventListener('input', e => {
+larguraEl.addEventListener('input', () => {
     const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
     marcacaoSelecionadaEl.style.width = `${larguraEl.value}px`;
 });
 
-alturaEl.addEventListener('input', e => {
+alturaEl.addEventListener('input', () => {
     const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
     marcacaoSelecionadaEl.style.height = `${alturaEl.value}px`;
 });
 
-tituloEl.addEventListener('input', e => {
+tituloEl.addEventListener('input', () => {
     const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
     marcacaoSelecionadaEl.dataset.titulo = tituloEl.value;
 });
 
-conteudoEl.addEventListener('input', e => {
+conteudoEl.addEventListener('input', () => {
     const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
     marcacaoSelecionadaEl.dataset.conteudo = conteudoEl.value;
 });
 
-corEl.addEventListener('input', e => {
+corEl.addEventListener('input', () => {
     const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
     marcacaoSelecionadaEl.dataset.cor = corEl.value;
 });
 
 for (let formatoMarcacaoEl of formatoMarcacao){
-    formatoMarcacaoEl.addEventListener('click', e => {
+    formatoMarcacaoEl.addEventListener('click', () => {
         const marcacaoSelecionadaEl = document.querySelector('.marcacao.selecionada');
         let formato = marcacaoSelecionadaEl.classList.contains("formato-oval") ? "formato-oval" : "formato-retangular";
         marcacaoSelecionadaEl.classList.remove(formato);

@@ -1,5 +1,5 @@
 const balaozinhoEl = document.querySelector('#balaozinho');
-let marcacoes = document.querySelectorAll('.marcacao');
+const marcacoes = document.querySelectorAll('.marcacao');
 
 for (let marcacaoEl of marcacoes){
 
@@ -10,7 +10,7 @@ for (let marcacaoEl of marcacoes){
         balaozinhoEl.style.color = marcacaoEl.dataset.cor;
     });
 
-    marcacaoEl.addEventListener('mouseout', (e) => {
+    marcacaoEl.addEventListener('mouseout', () => {
         balaozinhoEl.innerHTML = '';
     });
 
